@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-// TODO: Revisit
 int main(int argc, char const *argv[])
 {
+    int n;
     /* code */
     return 0;
 }
