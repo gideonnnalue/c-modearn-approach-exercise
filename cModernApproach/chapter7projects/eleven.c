@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    char c, initial;
+
+    printf("Enter a first and last name: ");
+    initial = getchar();
+
+    while ((c = getchar()) != ' ')
+        ;
+
+    while ((c = getchar()) != '\n')
+    {
+        putchar(c);
+    }
+    
+    printf(", %c.\n", initial);
+        
+    return 0;
+}
