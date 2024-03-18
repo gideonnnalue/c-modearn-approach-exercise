@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char ch;
     int sum = 0, cases[26] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8,

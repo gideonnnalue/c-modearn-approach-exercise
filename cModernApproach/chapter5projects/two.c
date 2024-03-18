@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int hour, minute;
 
@@ -8,7 +8,6 @@ int main(int argc, char const *argv[])
     scanf("%d:%d", &hour, &minute);
 
     printf("\nEquivalent 12-hour time: %.2d:%.2d %s\n", hour > 12 ? hour - 12 : hour, minute, hour >= 12 ? "PM" : "AM");
-    
 
     return 0;
-}/* code */
+} /* code */

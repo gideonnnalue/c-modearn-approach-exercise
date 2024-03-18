@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int i, n, odd, square;
 
@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     odd = 3;
     for (square = 1; i <= n; odd += 2)
     {
-        printf("%10d%10d\n", i , square);
+        printf("%10d%10d\n", i, square);
         ++i;
         square += odd;
     }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int digit_count[10] = {0};
     int digit;

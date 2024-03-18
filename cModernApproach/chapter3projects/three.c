@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int GSI, group_identifier, publisher_code, item_number, check_digit;
 

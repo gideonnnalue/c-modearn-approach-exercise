@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int item_number, day, month, year;
     float unit_price;

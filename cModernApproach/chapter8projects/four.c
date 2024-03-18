@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#define N_SIZE ((int) (sizeof(a) / sizeof(a[0])))
+#define N_SIZE ((int)(sizeof(a) / sizeof(a[0])))
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int a[10], i;
 
@@ -14,6 +14,6 @@ int main(int argc, char const *argv[])
     for (i = N_SIZE - 1; i >= 0; i--)
         printf(" %d", a[i]);
     printf("\n");
-    
+
     return 0;
 }

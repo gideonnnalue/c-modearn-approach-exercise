@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int hour, minute, user_time,
         t1 = 480,

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int amount = 0;
 
@@ -18,7 +18,6 @@ int main(int argc, char const *argv[])
 
     int ones = amount / 1;
     amount = amount % 1;
-
 
     printf("\n$20 bills: %d\n", twenties);
     printf("$10 bills: %d\n", tens);

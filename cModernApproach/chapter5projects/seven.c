@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int num1, num2, num3, num4, high, low, high2, low2;
 
@@ -29,12 +29,12 @@ int main(int argc, char const *argv[])
         low2 = num3;
     }
 
-    if(high >= high2)
+    if (high >= high2)
         high = high;
     else
         high = high2;
 
-    if(low <= low2)
+    if (low <= low2)
         low = low;
     else
         low = low2;

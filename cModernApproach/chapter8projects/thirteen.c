@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char c, initial, last_name[20] = {0};
     int i = 0;
@@ -13,12 +13,12 @@ int main(int argc, char const *argv[])
 
     for (i = 0; (c = getchar()) != '\n'; i++)
         last_name[i] = c;
-    
+
     printf("You entered the name: ");
 
-    for(i = 0; last_name[i] != '\0'; i++)
+    for (i = 0; last_name[i] != '\0'; i++)
         putchar(last_name[i]);
     printf(", %c.\n", initial);
-        
+
     return 0;
 }

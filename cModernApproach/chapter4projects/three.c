@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int num1, num2, num3;
     printf("Enter a three-digit number: ");

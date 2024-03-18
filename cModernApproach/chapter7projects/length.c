@@ -1,7 +1,7 @@
 #include <stdio.h>
 // #include <ctype.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char ch;
     int len = 0;
@@ -14,6 +14,6 @@ int main(int argc, char const *argv[])
         ch = getchar();
     }
     printf("\nYour message was %d character(s) long \n", len);
-    
+
     return 0;
 }

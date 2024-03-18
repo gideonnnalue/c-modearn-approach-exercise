@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // TODO: FIX PROGRAMM
-int main(int argc, char const *argv[])
+int main(void)
 {
     int num = 0, test;
 
@@ -16,7 +16,6 @@ int main(int argc, char const *argv[])
     {
         printf("%d", test /= 10);
     } while (test > 0);
-    
 
     printf("\n%d%d\n", num % 10, num / 10);
 

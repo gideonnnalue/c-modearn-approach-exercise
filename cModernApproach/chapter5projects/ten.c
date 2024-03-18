@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int grade;
 
@@ -12,7 +12,8 @@ int main(int argc, char const *argv[])
 
     switch (grade / 10)
     {
-    case 10: case 9:
+    case 10:
+    case 9:
         printf("Letter grade: A\n");
         break;
     case 8:
@@ -24,7 +25,12 @@ int main(int argc, char const *argv[])
     case 6:
         printf("Letter grade: D\n");
         break;
-    case 0: case 1: case 2: case 3: case 4: case 5:
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
         printf("Letter grade: F\n");
         break;
     default:

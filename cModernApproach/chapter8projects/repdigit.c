@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     bool digit_seen[10] = {false};
     int digit;
@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     {
         digit = n % 10;
 
-        if(digit_seen[digit])
+        if (digit_seen[digit])
             break;
 
         digit_seen[digit] = true;
@@ -25,7 +25,6 @@ int main(int argc, char const *argv[])
         printf("Repeated digit\n");
     else
         printf("No repeated digit\n");
-    
 
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int num;
 
@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     scanf("%d", &num);
     printf("\n");
 
-    if(num >= 0 && num < 10)
+    if (num >= 0 && num < 10)
         printf("The number %d has 1 digit", num);
     else if (num >= 10 && num < 100)
         printf("The number %d has 2 digits", num);
@@ -23,4 +23,3 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
-

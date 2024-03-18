@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int top, bottom, m, n;
 
@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
         n = remainder;
     }
 
-    printf("\nIn lowest terms: %d/%d\n", top/m, bottom/m);
-    
+    printf("\nIn lowest terms: %d/%d\n", top / m, bottom / m);
+
     return 0;
 }

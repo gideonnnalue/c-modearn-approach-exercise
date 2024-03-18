@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int digits = 0, n;
 
@@ -14,6 +14,6 @@ int main(int argc, char const *argv[])
     } while (n > 0);
 
     printf("\nThe number has %d digit(s). \n", digits);
-    
+
     return 0;
 }

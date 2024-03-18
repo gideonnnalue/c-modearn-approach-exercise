@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int count = 0;
     char c;
@@ -12,14 +12,18 @@ int main(int argc, char const *argv[])
     {
         switch (toupper(c))
         {
-        case 'A': case 'E': case 'I': case 'O': case 'U':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
             count++;
             break;
         default:
             break;
         }
     }
-    
+
     printf("Your sentence contains %d vowels\n", count);
 
     return 0;

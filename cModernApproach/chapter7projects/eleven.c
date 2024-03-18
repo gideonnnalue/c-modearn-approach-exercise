@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char c, initial;
 
@@ -14,8 +14,8 @@ int main(int argc, char const *argv[])
     {
         putchar(c);
     }
-    
+
     printf(", %c.\n", initial);
-        
+
     return 0;
 }

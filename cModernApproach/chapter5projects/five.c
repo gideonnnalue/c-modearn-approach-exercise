@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     float income, total;
 
@@ -19,8 +19,8 @@ int main(int argc, char const *argv[])
         total = 5 / 100 * income + 142.50f;
     else
         6 / 100 * income + 230.0f;
-    
+
     printf("Your tax due is: %.2f\n", total);
-    
+
     return 0;
 }

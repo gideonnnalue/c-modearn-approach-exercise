@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     double input, guess = 1.0f, division = 0.0f, average_division = 1.0f;
 
@@ -14,7 +14,6 @@ int main(int argc, char const *argv[])
         division = input / guess;
         average_division = (guess + division) / 2;
     } while (fabs(guess) != fabs(average_division));
-
 
     printf("Square root: %lf\n", average_division);
 

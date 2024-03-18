@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int country_code, first_number, second_number;
 
@@ -8,6 +8,6 @@ int main(int argc, char const *argv[])
     scanf("(%d) %d-%d", &country_code, &first_number, &second_number);
 
     printf("\nYou entered %d.%d.%d\n", country_code, first_number, second_number);
-    
+
     return 0;
 }

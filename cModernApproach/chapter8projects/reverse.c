@@ -2,7 +2,7 @@
 
 #define N 10
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int a[N], i;
 
@@ -14,6 +14,6 @@ int main(int argc, char const *argv[])
     for (i = N - 1; i >= 0; i--)
         printf(" %d", a[i]);
     printf("\n");
-    
+
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int num, dig1, dig2, dig3, dig4, dig5;
 

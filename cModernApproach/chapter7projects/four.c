@@ -1,38 +1,55 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char c;
     printf("Enter phone number: ");
 
-
-    while((c = getchar()) != '\n')
+    while ((c = getchar()) != '\n')
     {
         switch (toupper(c))
         {
-        case 'A': case 'B': case 'C':
+        case 'A':
+        case 'B':
+        case 'C':
             putchar('2');
             break;
-        case 'D': case 'E': case 'F':
+        case 'D':
+        case 'E':
+        case 'F':
             putchar('3');
             break;
-        case 'G': case 'H': case 'I':
+        case 'G':
+        case 'H':
+        case 'I':
             putchar('4');
             break;
-        case 'J': case 'K': case 'L':
+        case 'J':
+        case 'K':
+        case 'L':
             putchar('5');
             break;
-        case 'M': case 'N': case 'O':
+        case 'M':
+        case 'N':
+        case 'O':
             putchar('6');
             break;
-        case 'P': case 'Q': case 'R': case 'S':
+        case 'P':
+        case 'Q':
+        case 'R':
+        case 'S':
             putchar('7');
             break;
-        case 'T': case 'U': case 'V':
+        case 'T':
+        case 'U':
+        case 'V':
             putchar('8');
             break;
-        case 'W': case 'X': case 'Y': case 'Z':
+        case 'W':
+        case 'X':
+        case 'Y':
+        case 'Z':
             putchar('2');
             break;
         default:
@@ -40,6 +57,6 @@ int main(int argc, char const *argv[])
             break;
         }
     }
-        
+
     return 0;
 }

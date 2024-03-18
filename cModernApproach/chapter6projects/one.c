@@ -1,17 +1,18 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     float num = 0.0f, input;
 
-    for(;;) {
+    for (;;)
+    {
         printf("Enter a number: ");
         scanf("%f", &input);
         printf("\n");
 
-        if(input <= 0)
+        if (input <= 0)
             break;
-        else if(input > num)
+        else if (input > num)
             num = input;
     }
 

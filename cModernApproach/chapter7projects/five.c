@@ -1,41 +1,52 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char ch;
-    int sum = 0;;
-    
+    int sum = 0;
+    ;
+
     printf("Enter a word: ");
 
     while ((ch = getchar()) != '\n')
     {
         switch (toupper(ch))
         {
-        case 'Q': case 'Z':
+        case 'Q':
+        case 'Z':
             sum += 10;
             break;
-        case 'J': case 'X':
+        case 'J':
+        case 'X':
             sum += 8;
             break;
         case 'K':
             sum += 5;
             break;
-        case 'F': case 'H': case 'V': case 'W': case 'Y':
+        case 'F':
+        case 'H':
+        case 'V':
+        case 'W':
+        case 'Y':
             sum += 4;
             break;
-        case 'B': case 'C': case 'M': case 'P':
-             sum += 3;
-             break;
-        case 'D': case 'G':
+        case 'B':
+        case 'C':
+        case 'M':
+        case 'P':
+            sum += 3;
+            break;
+        case 'D':
+        case 'G':
             sum += 2;
         default:
             sum++;
             break;
         }
     }
-    
+
     printf("%d\n", sum);
-    
+
     return 0;
 }

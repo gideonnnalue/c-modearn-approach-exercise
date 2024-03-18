@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char c, phone_number[15] = {0};
     printf("Enter phone number: ");

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     float radius;
 
@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 
     int radius_exponent = radius * radius * radius;
     float pi = 3.142f;
-    float constant = 4.0f/3.0f;
+    float constant = 4.0f / 3.0f;
 
     float value = constant * pi * radius_exponent;
 

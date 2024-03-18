@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     printf("Size of int: %ld\n", sizeof(int));
     printf("Size of short: %ld\n", sizeof(short));

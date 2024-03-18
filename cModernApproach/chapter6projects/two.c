@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     int m, n;
 
@@ -15,7 +15,6 @@ int main(int argc, char const *argv[])
     }
 
     printf("\nGreated common divisor: %d\n", m);
-    
 
     return 0;
 }
