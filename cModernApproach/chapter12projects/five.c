@@ -2,35 +2,36 @@
 
 int main(void)
 {
-    char word[100] = {0}, symbol, c;
+    char word[100] = {0}, symbol, c, *p = word, *q;
     int i, j = 0;
 
     printf("Enter a sentence: ");
 
-    for (i = 0; (c = getchar()) != '\n'; i++)
+    while ((c = getchar()) != '\n')
     {
         if (c == '.' || c == '?' || c == '!')
         {
             symbol = c;
             break;
         }
-        word[i] = c;
+
+        *p++ = c;
     }
 
-    while (i >= 0)
+    while (p >= word)
     {
-        while (word[--i] != ' ' && i != 0)
+        while (*--p != ' ' && p != word)
             ;
 
-        j = i == 0 ? 0 : i + 1;
+        q = p == word ? word : p + 1;
 
-        while (word[j] != '\0' && word[j] != ' ')
+        while (*q != '\0' && *q != ' ')
         {
-            putchar(word[j]);
-            j++;
+            putchar(*q);
+            q++;
         }
 
-        if (i >= 0)
+        if (p >= word)
             printf(" ");
     }
 
