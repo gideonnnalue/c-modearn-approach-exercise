@@ -1,21 +1,35 @@
 #include <stdio.h>
 
+double compute_average_word_length(const char *sentence);
+
 int main(void)
 {
-    char c, initial;
+    char word[100];
+    double length;
 
-    printf("Enter a first and last name: ");
-    initial = getchar();
+    printf("Enter a sentence: ");
 
-    while ((c = getchar()) != ' ')
-        ;
+    fgets(word, 100, stdin);
 
-    while ((c = getchar()) != '\n')
-    {
-        putchar(c);
-    }
+    length = compute_average_word_length(word);
 
-    printf(", %c.\n", initial);
+    printf("Average word length: %.1f\n", length);
 
     return 0;
+}
+
+double compute_average_word_length(const char *sentence)
+{
+    int words = 1;
+    double length = 0.0;
+
+    while (*++sentence)
+    {
+        if (*sentence == ' ')
+            words++;
+        else
+            length++;
+    }
+
+    return length / words;
 }
