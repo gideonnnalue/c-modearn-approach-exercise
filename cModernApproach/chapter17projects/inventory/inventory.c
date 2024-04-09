@@ -14,8 +14,6 @@ struct part
     struct part *next;
 };
 
-int num_parts = 0; /* number of parts currently stored */
-
 struct part *inventory = NULL;
 
 int find_part(int number);
