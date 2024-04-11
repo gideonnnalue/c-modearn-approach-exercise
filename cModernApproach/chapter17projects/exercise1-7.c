@@ -87,11 +87,13 @@ struct node *delete_from_list(struct node **list, int n)
     return *list;
 }
 
-struct node *p, *next_node;
+/* Exercise 7 */
 
-while (p != NULL)
-{
-    next_node = p->next;
-    free(p);
-    p = next_node;
-}
+// struct node *p, *next_node;
+
+// while (p != NULL)
+// {
+//     next_node = p->next;
+//     free(p);
+//     p = next_node;
+// }
